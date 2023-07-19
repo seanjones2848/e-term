@@ -68,7 +68,7 @@ int EPD_5in83_test(void)
     DEV_Delay_ms(2000);
 #endif        
 
-#if 0   // show image for array   
+#if 1   // show image for array   
     printf("show image for array\r\n");
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
@@ -77,7 +77,7 @@ int EPD_5in83_test(void)
     DEV_Delay_ms(500);
 #endif
 
-#if 0   // Drawing on the image
+#if 1   // Drawing on the image
     //1.Select Image
     printf("SelectImage:BlackImage\r\n");
     Paint_SelectImage(BlackImage);
@@ -100,8 +100,6 @@ int EPD_5in83_test(void)
     Paint_DrawString_EN(10, 20, "hello world", &Font12, WHITE, BLACK);
     Paint_DrawNum(10, 33, 123456789, &Font12, BLACK, WHITE);
     Paint_DrawNum(10, 50, 987654321, &Font16, WHITE, BLACK);
-    Paint_DrawString_CN(130, 0, " ÄãºÃabc", &Font12CN, BLACK, WHITE);
-    Paint_DrawString_CN(130, 20, "Î¢Ñ©µç×Ó", &Font24CN, WHITE, BLACK);
 
     printf("EPD_Display\r\n");
     EPD_5IN83_Display(BlackImage);

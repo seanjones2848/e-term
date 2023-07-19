@@ -9,6 +9,11 @@ Install raspian os on pi
 
 I used the setup and example code from the waveshare [site](https://www.waveshare.com/wiki/5.83inch_e-Paper_HAT_Manual#Working_With_Raspberry_Pi)
 
+Enable SPI on pi (Interface Options -> SPI -> Yes)
+```
+sudo raspi-config
+```
+
 Install BCM2836 lib
 
 ```
